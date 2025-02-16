@@ -64,6 +64,7 @@ first div in the grid  and place it in the grid. */
      max-height: 600px;
      overflow: hidden;
 }
+
 .about-image { grid-row: 2; }
 .method-image { grid-row: 3; }
 .clients-image { grid-row: 4; }
@@ -72,13 +73,29 @@ first div in the grid  and place it in the grid. */
 /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block {
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      text-align: center;
      background-color: rgba(255, 255, 255, 0.8);
      padding: 30px;
      border: 10px solid black;
+     max-width: 600px;
+     margin: auto;
 }
+
+.text-block h2 {
+     width: 100%;
+     text-align: center;
+     margin-bottom: 15px;
+}
+ 
+.text-block p {
+     width: 100%;
+     text-align: center;
+     margin-bottom: 10px;
+}
+
 
 /* Add your media query here */
 @media screen and (min-width: 800px) {
